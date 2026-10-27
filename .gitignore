@@ -1,0 +1,19 @@
+# data, checkpoints and run output
+birds/
+BM616_birds/
+checkpoints/
+*.weights.h5
+*_test_prob.npy
+*.zip
+
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+env/
+
+# editors and OS
+.vscode/
+.idea/
+.DS_Store

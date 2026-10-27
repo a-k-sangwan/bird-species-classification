@@ -1,0 +1,22 @@
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+Model & Seeds & Params (M) & Epochs & Time (min) & Train acc. & Val. acc. \\
+\midrule
+CNN (scratch) & 3 & 2.9 & 77 $\pm$ 6 & 157 $\pm$ 10 & 94.48 $\pm$ 0.28 & 93.59 $\pm$ 0.58 \\
+MobileNet & 3 & 3.7 & 50 $\pm$ 0 & 230 $\pm$ 1 & 99.95 $\pm$ 0.01 & 98.22 $\pm$ 0.13 \\
+VGG16 (frozen) & 3 & 394.1 & 40 $\pm$ 0 & 145 $\pm$ 2 & 95.10 $\pm$ 0.13 & 94.69 $\pm$ 0.12 \\
+VGG16 (block 5 tuned) & 3 & 401.2 & 40 $\pm$ 0 & 125 $\pm$ 2 & 99.22 $\pm$ 0.12 & 96.33 $\pm$ 0.12 \\
+\bottomrule
+\end{tabular}
+
+
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+Model & Accuracy & Top-5 & Precision & Recall & F1 \\
+\midrule
+CNN (scratch) & 96.99 $\pm$ 0.31 & 99.35 $\pm$ 0.04 & 0.975 $\pm$ 0.004 & 0.970 $\pm$ 0.003 & 0.969 $\pm$ 0.003 \\
+MobileNet & 99.39 $\pm$ 0.08 & 99.90 $\pm$ 0.08 & 0.995 $\pm$ 0.000 & 0.994 $\pm$ 0.001 & 0.994 $\pm$ 0.001 \\
+VGG16 (frozen) & 96.81 $\pm$ 0.17 & 99.75 $\pm$ 0.15 & 0.974 $\pm$ 0.002 & 0.968 $\pm$ 0.002 & 0.968 $\pm$ 0.002 \\
+VGG16 (block 5 tuned) & 98.26 $\pm$ 0.18 & 99.87 $\pm$ 0.04 & 0.986 $\pm$ 0.001 & 0.983 $\pm$ 0.002 & 0.982 $\pm$ 0.002 \\
+\bottomrule
+\end{tabular}

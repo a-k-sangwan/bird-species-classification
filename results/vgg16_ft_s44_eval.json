@@ -1,0 +1,72 @@
+{
+ "model": "vgg16_ft",
+ "seed": 44,
+ "n_classes": 525,
+ "n_test": 2625,
+ "accuracy": 0.984,
+ "accuracy_no_tta": 0.9805714285714285,
+ "top5_accuracy": 0.9984761904761905,
+ "macro_precision": 0.9866575963718822,
+ "macro_recall": 0.9839999999999999,
+ "macro_f1": 0.9837489177489178,
+ "epochs_run": 40,
+ "best_epoch": 40,
+ "best_train_accuracy": 0.9933124780654907,
+ "best_val_accuracy": 0.9622856974601746,
+ "train_minutes": 127.67952740589777,
+ "test_ms_per_image": 1.9626192365373885,
+ "params_total": 408867413,
+ "params_trainable": 401192149,
+ "config": {
+  "hf_dataset": "chriamue/bird-species-dataset",
+  "data_dir": "birds",
+  "n_classes": null,
+  "img_size": 224,
+  "batch_size": 64,
+  "seed": 42,
+  "train_seeds": [
+   42,
+   43,
+   44
+  ],
+  "augment": true,
+  "mixed_precision": true,
+  "models": [
+   "cnn",
+   "mobilenet",
+   "vgg16",
+   "vgg16_ft"
+  ],
+  "epochs": {
+   "cnn": 80,
+   "mobilenet": 50,
+   "vgg16": 40,
+   "vgg16_ft": 40
+  },
+  "optimizer": {
+   "cnn": [
+    "adamax",
+    0.006
+   ],
+   "mobilenet": [
+    "adamax",
+    0.006
+   ],
+   "vgg16": [
+    "sgd",
+    0.01
+   ],
+   "vgg16_ft": [
+    "sgd",
+    0.01
+   ]
+  },
+  "vgg_head": "original",
+  "label_smoothing": 0.1,
+  "warmup_epochs": 2,
+  "tta": true,
+  "early_stop_patience": 8,
+  "lr_patience": 3,
+  "lr_factor": 0.5
+ }
+}
