@@ -68,3 +68,7 @@ file, pass JSON in `BM616_CONFIG`, for example
 output folder with `BM616_OUT_DIR`.
 
 The results above were made with Python 3.12, TensorFlow 2.21 and Keras 3.15.
+
+## License
+
+MIT, see [LICENSE](LICENSE).
