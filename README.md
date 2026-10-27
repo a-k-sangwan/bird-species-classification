@@ -48,6 +48,9 @@ from them.
 - `plots.py`: figures and LaTeX tables, read from `results/`.
 - `bird_species_colab.ipynb`: the same code as a Colab notebook, built by
   `make_notebook.py`.
+- `original_2020/`: the 2020 notebooks (CNN, MobileNet, VGG16) that the paper
+  compares against in Section VIII. They were written for the 185-species
+  Kaggle release and read it from Kaggle, so they do not run as they are now.
 
 ## Running
 
